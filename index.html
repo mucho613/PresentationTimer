@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>PresentationTimer</title>
+<meta charset="utf8">
+<style>
+  @keyframes countdownA {
+    0% { transform: translateY(-100%); }
+    20% { transform: translateY(0); }
+    80% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+  }
+  @keyframes countdownB {
+    0% { transform: translateY(0); }
+    80% { transform: translateY(0); }
+    100% { transform: translateY(100%); }
+  }
+  @keyframes countdownC {
+    0% { transform: translateY(-100%); }
+    20% { transform: translateY(0); }
+  }
+
+  body { margin: 0; background-color: black; }
+  #remainTime { font-family: roboto; font-size: 600px; color: white; }
+  .countdownA { animation: countdownA 1s infinite }
+  .countdownB { animation: countdownB 1s }
+  .countdownC { animation: countdownC 1s }
+  #remainTime div { width: 25%; float: left; }
+  #digit2 { transform: translateX(84px) translateY(-36px); }
+</style>
+<div id="remainTime">
+  <div id="digit3"></div>
+  <div id="digit2"></div>
+  <div id="digit1"></div>
+  <div id="digit0"></div>
+</div>
+<script src="js/main.js"></script>
